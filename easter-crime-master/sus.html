@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotek Mordet</title>
+    <link rel="stylesheet" href="style/sus.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favico.png"/>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <h1 id="gae"><a href="#">BIBLIOTEK MORDET</a></h1>
+        </div>
+        <nav class="navbar-container" id="ignore" class="ignore">
+            <ul id="navbar">
+                <a href="./index.html">
+                    <li>HOVUDSIDE</li>
+                </a>
+                <a href="#">
+                    <li>BEVIS</li>
+                </a>
+                <a href="./sus.html">
+                    <li class="active">MISTENKTE</li>
+                </a>
+                <a href="info.html"> 
+                    <li>INFO</li>
+                </a>
+            </ul>
+            <div id="nav-toggle-img-container">
+                <div id="navbar-heading" style="visibility: hidden;"><h2 id="text-lol">MENY</h2></div>
+                <div id="flex">
+                    <img src="img/hamb-ico.png" id="toggle-btn" alt="" class="nav-toggle-img" onclick="toggle()">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div id="mistenkte">
+                <div id="mistenkt1" class="mistenkt">
+                    <div id="container">
+                        <div id="profile-pic">
+                            <img src="./img/mshots/rektor.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container2">
+                        <div id="info-area">
+                            <h1>OLE REINLUND</h1>
+                            <p>Ole reinlund har musikken som hobby. Han ga nylig ut en ny singel «så var du berre borte».  </p>
+                        </div>
+                    </div>
+                    <div id="container3">
+                        <div id="chat-box">
+                            <div id="box1" class="box-class">
+        
+                            </div>
+                        </div>
+                        <div id="send-box">
+                            <div id="buttons-container">
+                                <div id="dropdown">
+                                    <select name="questions" id="spm-dd1" class="spm-dd">
+                                        <option value="1">Hvor var du kl.15:30, da Ann Helen ble drept?</option>
+                                    </select>
+                                </div>
+                                <div id="send">
+                                    <div id="info-btn-container">
+                                        <a onclick="answer();" id="send-btn" style="font-size: 1em; border: 4px solid #DCDCDC; cursor: pointer;">SEND</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mistenkt2" class="mistenkt">
+                    <div id="container">
+                        <div id="profile-pic">
+                            <img src="./img/mshots/TORE.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container2">
+                        <div id="info-area">
+                            <h1>TORE THORESEN</h1>
+                            <p>Ser ganske mistenkelig ut og kommer alltid for sent til alle timene hans. Og sitter vanlig vis noen timer etter jobb.</p>
+                        </div>
+                    </div>
+                    <div id="container3">
+                        <div id="chat-box">
+                            <div id="box2" class="box-class">
+        
+                            </div>
+                        </div>
+                        <div id="send-box">
+                            <div id="buttons-container">
+                                <div id="dropdown">
+                                    <select name="questions" id="spm-dd2" class="spm-dd">
+                                        <option value="1">Hvor var du kl.15:30, da Ann Helen ble drept?</option>
+                                    </select>
+                                </div>
+                                <div id="send">
+                                    <div id="info-btn-container">
+                                        <a onclick="answer();" id="send-btn" style="font-size: 1em; border: 4px solid #DCDCDC; cursor: pointer;">SEND</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mistenkt3" class="mistenkt">
+                    <div id="container">
+                        <div id="profile-pic">
+                            <img src="./img/mshots/JRN.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container2">
+                        <div id="info-area">
+                            <h1>JØRN TORE</h1>
+                            <p>Jørn har enda ikke klart seg å sette seg inn i sosiale medier enda. Han hater sosiale medier og mener at Medier ikke er bra for den neste generasjonen. Han er en litt sær person, det burde vi ha skjønt når han sier at det beste han vet om er pølse i vaffel.</p>    
+                        </div>
+                    </div>
+                    <div id="container3">
+                        <div id="chat-box">
+                            <div id="box3" class="box-class">
+        
+                            </div>
+                        </div>
+                        <div id="send-box">
+                            <div id="buttons-container">
+                                <div id="dropdown">
+                                    <select name="questions" id="spm-dd3" class="spm-dd">
+                                        <option value="1">Hvor var du kl.15:30, da Ann Helen ble drept?</option>
+                                        <option value="2">Hvorfor har du lånt de bøkene som står på lånelisten?</option>
+                                    </select>
+                                </div>
+                                <div id="send">
+                                    <div id="info-btn-container">
+                                        <a onclick="answer();" id="send-btn" style="font-size: 1em; border: 4px solid #DCDCDC; cursor: pointer;">SEND</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mistenkt4" class="mistenkt">
+                    <div id="container">
+                        <div id="profile-pic">
+                            <img src="./img/mshots/ANNA.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container2">
+                        <div id="info-area">
+                            <h1>ANNA KNISENKO</h1>
+                            <p>Matte lærer, morosam og gjør litt narr av hennes elever. Er også bestevenn med Alina.</p>    
+                        </div>
+                    </div>
+                    <div id="container3">
+                        <div id="chat-box">
+                            <div id="box4" class="box-class">
+        
+                            </div>
+                        </div>
+                        <div id="send-box">
+                            <div id="buttons-container">
+                                <div id="dropdown">
+                                    <select name="questions" id="spm-dd4" class="spm-dd">
+                                        <option value="1">Hvor var du kl.15:30, da Ann Helen ble drept?</option>
+                                    </select>
+                                </div>
+                                <div id="send">
+                                    <div id="info-btn-container">
+                                        <a onclick="answer();" id="send-btn" style="font-size: 1em; border: 4px solid #DCDCDC; cursor: pointer;">SEND</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mistenkt5" class="mistenkt">
+                    <div id="container">
+                        <div id="profile-pic">
+                            <img src="./img/Experiment/avatar.png" alt="">
+                        </div>
+                    </div>
+                    <div id="container2">
+                        <div id="info-area">
+                            <h1>BERIT FISKEGÅRD</h1>
+                            <p>Berit har alltid drømt om å bli en berømt forfatter, det er derfor hun jobber som norsk lærer. Hun har dessverre ikke hatt like stor suksess som hun Ann Helen.</p>    
+                        </div>
+                    </div>
+                    <div id="container3">
+                        <div id="chat-box">
+                            <div id="box5" class="box-class">
+                                
+                            </div>
+                        </div>
+                        <div id="send-box">
+                            <div id="buttons-container">
+                                <div id="dropdown">
+                                    <select name="questions" id="spm-dd5" class="spm-dd">
+                                        <option value="1">Hvor var du kl.15:30, da Ann Helen ble drept?</option>
+                                    </select>
+                                </div>
+                                <div id="send">
+                                    <div id="info-btn-container">
+                                        <a onclick="answer();" id="send-btn" style="font-size: 1em; border: 4px solid #DCDCDC; cursor: pointer;">SEND</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="close-cont">
+                <span class="close" id="close" onclick="closeModal();">&times;</span>
+            </div>
+        </div>
+      </div>
+    <main id="main">
+        <div id="container-sus">
+            <div id="heading">
+                <h1>UTFORSK DE MISTENKTE</h1>
+            </div>
+            <div class="button flex-center">
+                <a href="#spacer" class="a-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="171.01" height="171.01" viewBox="0 0 171.01 171.01">
+                    <g id="Component_5_6" data-name="Component 5 – 6" transform="translate(0.5 0.5)">
+                      <circle id="Ellipse_2" data-name="Ellipse 2" cx="78" cy="78" r="78" transform="translate(7.005 7)" fill="#464646"/>
+                      <g id="Icon_ionic-ios-arrow-dropdown" data-name="Icon ionic-ios-arrow-dropdown" transform="translate(-3.375 -3.375)">
+                        <path id="Path_1" data-name="Path 1" d="M12.281,16.748a7.918,7.918,0,0,0,0,11.157l39.11,38.988a7.879,7.879,0,0,0,10.871.245L100.8,28.722A7.875,7.875,0,1,0,89.685,17.565l-33.1,32.612L23.438,16.707A7.881,7.881,0,0,0,12.281,16.748Z" transform="translate(31.798 53.119)" fill="#dcdcdc" stroke="#dcdcdc" stroke-width="1"/>
+                        <path id="Path_2" data-name="Path 2" d="M3.375,88.38a85,85,0,1,0,85-85A84.992,84.992,0,0,0,3.375,88.38ZM139.219,37.54A71.9,71.9,0,1,1,37.54,139.219,71.9,71.9,0,1,1,139.219,37.54Z" transform="translate(0 0)" fill="#dcdcdc" stroke="#dcdcdc" stroke-width="1"/>
+                      </g>
+                    </g>
+                </svg>
+            </a>
+            </div>
+        </div>
+        <div id="spacer"></div>
+        <div id="cork" class="flex-center">
+            <div class="ava-cont" id="one">
+                <a class="ava-a" onclick="person = 1; modal();"><img src="./img/mshots/rektor.png" alt=""></a>
+                <img src="./img/Paper/OLEREINLUND.png" alt="" class="mistenkt-text">
+            </div>
+            <div class="ava-cont" id="two">
+                <img src="./img/Paper/TOREEE.png" alt="" class="mistenkt-text">
+                <a class="ava-a" onclick="person = 2; modal();"><img src="./img/mshots/TORE.png" alt=""></a>
+            </div>
+            <div class="ava-cont" id="three">
+                <a class="ava-a" onclick="person = 3; modal();"><img src="./img/mshots/JRN.png" alt=""></a>
+                <img src="./img/Paper/JØRNTORE.png" alt="" class="mistenkt-text">
+            </div>
+            <div class="ava-cont" id="four">
+                <a class="ava-a" onclick="person = 4; modal();"><img src="./img/mshots/ANNA.png" alt=""></a>
+                <img src="./img/Paper/ANNA.png" alt="" class="mistenkt-text">
+            </div>
+            <div class="ava-cont" id="five">
+                <img src="./img/Paper/BERIT.png" alt="" class="mistenkt-text">
+                <a class="ava-a" onclick="person = 5; modal();"><img src="./img/Experiment/avatar.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="foot-container">
+            <h2 id="rights">© 2021 AHOK All Rights Reserved</h2>
+        </div>
+    </footer>
+    <!-- ----------------------- -->
+    <!-- Add på snap: 'arskobel' -->
+    <!-- ----------------------- -->
+    <script src="./nav2.js"></script>
+</body>
+</html>
