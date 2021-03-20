@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotek Mordet | Hovudside</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favico.png"/>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <h1 id="gae"><a href="#">BIBLIOTEK MORDET</a></h1>
+        </div>
+        <nav class="navbar-container" id="ignore" class="ignore">
+            <ul id="navbar">
+                <a href="#">
+                    <li class="active">HOVUDSIDE</li>
+                </a>
+                <a href="./info.html">
+                    <li>BEVIS</li>
+                </a>
+                <a href="./sus.html">
+                    <li>MISTENKTE</li>
+                </a>
+                <div id="guess">
+                    <a href="./makeaguess.php" id="php-redirect">
+                        <li id="php-redirect">SVAR PÅ GÅTA</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <div id="nav-toggle-img-container">
+            <div id="navbar-heading" style="visibility: hidden;"><h2 id="text-lol">MENY</h2></div>
+            <div id="flex">
+                <img src="img/hamb-ico.png" id="toggle-btn" alt="" class="nav-toggle-img" onclick="toggle()">
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div id="main-container">
+            <div id="countdown">
+                <span class="dark-txt extra-bold large-txt" id="tire"> 🗿 TIME REMAINING 🗿</span>
+                <span class="light-txt extra-bold medium-txt smooth" id="timer">0:0:0:0</span>
+                <span class="dark-txt bold small-txt" id="count-lbl">D H M S</span>
+            </div>
+            <div id="info-btn">
+                <div id="info-btn-container">
+                    <a href="info.html" id="start">START SPELET</a>
+                </div>
+                <div id="info-btn-container">
+                    <a href="#main-2">MEIR INFO</a>
+                </div>
+            </div>
+        </div>
+        <div id="main-2">
+            <div class="container">
+                <div id="inv"></div>
+                <div id="info-header-div">
+                    <h1 id="info-header">1IM - Informasjonsteknologi- og <br> medieproduksjon</h1>
+                </div>
+                <div id="info-cont">
+                    <p id="info-p">Vi, elevar på første året av den nye IKT og media linja ved Ålesund vidaregåande skule, har utvikla denne gåta får de å løyse. Vi har jobba hardt og håpar derfor at de nyter prosessen!</p>
+                </div>
+                <a href="https://www.instagram.com/ikt_og_media_alesundvgs/" class="salam">
+                    <div id="insta-cont">
+                        <img src="./img/inst.png" alt="" id="insta-img">
+                        <span id="insta-span">Følg oss på Instagram!</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="list">
+            <div id="list-header">
+                <h1>Teamet</h1>
+            </div>
+            <div id="list-container">
+                <div>
+                    <h1>Audio og Visuell</h1>
+                    <ul>
+                        <li>Marius Jensen</li>
+                        <li>Johan Vikebakk</li>
+                        <li>Musie Enbaye</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Nettside</h1>
+                    <ul>
+                        <li>Arseni Skobelev a.k.a Outlander</li>
+                        <li>Oliver Stene a.k.a <a href="wo.html"> Wide Oliver</a></li>
+                        <li>Henrik Gammelsæther a.k.a your moms boyfriend</li>
+                        <li>Konrad Kraagstad a.k.a Konrad</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>PR</h1>
+                    <ul>
+                        <li>Mia Ytreberg</li>
+                        <li>John Michael Knardal</li>
+                        <li>Titas Zakys</li>
+                        <li>Olav Blomvik</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="foot-container">
+            <h2 id="rights">© 2021 AHOK All Rights Reserved</h2>
+        </div>
+    </footer>
+    <!-- ----------------------- -->
+    <!-- Add på snap: 'arskobel' -->
+    <!-- ----------------------- -->
+    <script src="app.js"></script>
+    <script src="nav2.js"></script>
+</body>
+</html>
